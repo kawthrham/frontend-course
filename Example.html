@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Example</h1>
+
+    <p id="message">Hello!</p>
+
+    <button onclick="changeMessage()">Click Me</button>
+
+    <script>
+        // Variable
+        let name = "Kawthar";
+        let age = 26;
+
+        // Function
+        function changeMessage() {
+
+            if (age >= 18) {
+                document.getElementById("message").textContent =
+                    "Hello " + name + "! You are an adult.";
+            } else {
+                document.getElementById("message").textContent =
+                    "Hello " + name + "! You are under 18.";
+            }
+        }
+    </script>
+
+</body>
+</html>
